@@ -3,18 +3,24 @@
 фон #fff 
 фон первой секции и футера #2E2F42
 цвет логотипа хедер #4D5AE5 web #2E2F42 studio
-цвет акцент #4D5AE5
+цвет акцент #fff
 цвет лого футер #4D5AE5 #F4F4FD
 цвет текста футер #E7E9FC
 цвет контактов #434455
 
 */
 :root {
+  --main-title-color: #2e2f42;
+  --second-title-color: #434455;
+  --main-btn-color: #fff;
+  --hover-btn-color: #404bbf;
+  --typical-lh: 1.5;
+  --accent-color: #4d5ae5;
 }
 
 body {
   background-color: #fff;
-  color: #434455;
+  color: var(--second-title-color);
   font-family: "Roboto", sans-serif;
 }
 
@@ -27,15 +33,14 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--main-title-color);
 }
 
 .item-after-title {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: var(--typical-lh);
   letter-spacing: 0.02em;
-  color: #434455;
 }
 
 .hidden {
@@ -57,7 +62,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--main-title-color);
 }
 
 /*--------header--------*/
@@ -66,27 +71,27 @@ body {
   color: #2e2f42;
 }
 .header-logo > span {
-  color: #4d5ae5;
+  color: var(--accent-color);
 }
 
 .header-item a {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: var(--typical-lh);
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--main-title-color);
 }
 .header-auth-link {
   color: #434455;
 }
 .header-auth-link:hover,
 .header-auth-link:focus {
-  color: #4d5ae5;
+  color: var(--accent-color);
 }
 
 .header-item-link:hover,
 .header-item-link:focus {
-  color: #4d5ae5;
+  color: var(--accent-color);
 }
 /*--------main page--------*/
 .main-paige {
@@ -100,20 +105,21 @@ body {
   letter-spacing: 0.02em;
   color: #ffffff;
 }
-.btn {
-  color: #ffffff;
-  background-color: #4d5ae5;
-}
 
-.main-paige-btn {
+.studio-btn {
   font-family: inherit;
   font-size: 16px;
-  line-height: 1.5;
-  display: flex;
-  align-items: center;
+  line-height: var(--typical-lh);
   letter-spacing: 0.04em;
   padding: 16px 32px;
   border-radius: 4px;
+  color: var(--main-btn-color);
+  background-color: var(--accent-color);
+}
+
+.studio-btn:hover,
+.studio-btn:focus {
+  background-color: var(--hover-btn-color);
 }
 
 /*-------footer--------*/
@@ -125,9 +131,27 @@ body {
 }
 
 .footer-logo > span {
-  color: #4d5ae5;
+  color: var(--accent-color);
 }
 
 .footer-text {
   color: #e7e9fc;
+}
+
+/*--------portfolio--------*/
+
+.portfolio-btn {
+  font-size: 16px;
+  line-height: var(--typical-lh);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--accent-color);
+  background-color: #e7e9fc;
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  background-color: var(--hover-btn-color);
+  color: var(--main-btn-color);
 }
