@@ -1,0 +1,45 @@
+/*цвет основного текста  #2E2F42
+вторичный цвет текста #434455
+фон #fff 
+фон первой секции и футера #2E2F42
+цвет логотипа хедер #4D5AE5 web #2E2F42 studio
+цвет акцент #4D5AE5
+цвет лого футер #4D5AE5 #F4F4FD
+цвет текста футер #E7E9FC
+цвет контактов #434455
+
+*/
+
+body {
+  background-color: #fff;
+  color: #434455;
+  font-family: "Roboto", sans-serif;
+}
+
+.list {
+  list-style: none;
+}
+
+/*--------header--------*/
+
+.header-logo {
+  color: #2e2f42;
+}
+.header-logo > span {
+  color: #4d5ae5;
+}
+
+.header-item a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.header-auth-link .link:hover,
+.header-auth-link .link:focus {
+  color: #4d5ae5;
+}
