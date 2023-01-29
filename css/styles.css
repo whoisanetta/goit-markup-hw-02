@@ -37,6 +37,7 @@ body {
 }
 
 .item-after-title {
+  font-weight: 500;
   font-size: 16px;
   line-height: var(--typical-lh);
   letter-spacing: 0.02em;
@@ -56,6 +57,7 @@ body {
 }
 
 .title {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -170,6 +172,7 @@ body {
 /*--------portfolio--------*/
 
 .portfolio-btn {
+  font-weight: 500;
   font-size: 16px;
   line-height: var(--typical-lh);
   display: flex;
