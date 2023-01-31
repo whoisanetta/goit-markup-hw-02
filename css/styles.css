@@ -171,6 +171,7 @@ body {
 /*--------portfolio--------*/
 
 .portfolio-btn {
+  font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: var(--typical-lh);
